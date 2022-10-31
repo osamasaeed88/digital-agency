@@ -16,7 +16,7 @@ const nav_links =[
         display:'Services'
     },
     {
-        path:'#projects',
+        path:'#project',
         display:'Projects'
     },
     {
