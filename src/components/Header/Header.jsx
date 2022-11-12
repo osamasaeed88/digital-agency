@@ -31,7 +31,7 @@ const Header = () => {
             <div className="container">
                 <div className="nav__wrapper">
                     <div className="logo">
-                        <h2>Digi-Planet!!</h2>
+                        <h2>Digi-Planet</h2>
                         <p>Lets Grow Furthur Together Always!</p>
                     </div>
                     {/* ===== navigation ===== */}
@@ -48,7 +48,7 @@ const Header = () => {
 
                     {/* ===== light mode ===== */}
                     <div className="light__mode">
-                        <span><i class="ri-sun-line"></i>Light Mode</span>
+                        <span><i className="ri-sun-line"></i>Light Mode</span>
                     </div>
                 </div>
             </div>
