@@ -31,7 +31,7 @@ const Header = () => {
             <div className="container">
                 <div className="nav__wrapper">
                     <div className="logo">
-                        <h2>Digi-Planet</h2>
+                        <h2>Digi-Planet!!</h2>
                         <p>Lets Grow Furthur Together Always!</p>
                     </div>
                     {/* ===== navigation ===== */}
