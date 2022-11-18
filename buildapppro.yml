@@ -1,20 +1,22 @@
 version: 0.1
-env:
-  REACT_APP_API-URL: ""
 phases:
+  install:
+    runtime-versions:
+      nodejs: latest
+    commands:
+      - echo Installing
   pre_build:
-     commands:
-       - echoInstalling source NPM dependencies...
-       - npm install
-       - cp .env.production .env.production.local
+    commands:
+      - echo Installing source NPM dependencies.
+      - npm install
   build:
-     commands:
-       - echo Build started on 'date'
-       - npm run build
+    commands:
+      - echo Build started on `date`
+      - echo Compiling the Node.js code
+      - npm run build
+  post_build:
+    commands:
+      - echo Build completed on `date`
 artifacts:
   files:
     - '**/*'
-  base-directory: build
-cache:
-  paths:
-    - './node_modules/**/*' 
