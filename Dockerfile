@@ -8,4 +8,4 @@ RUN npm install
 
 COPY . .
 
-CMD ["npm","start","runserver","0.0.0.0:3000"]
+CMD ["npm","start","runserver","54.151.241.228"]
