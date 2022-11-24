@@ -11,14 +11,12 @@ const Hero = () => {
         <div className="hero_wrapper">
             <div className="hero_content">
               <div>
-                <h2>We Digitalizing The Planet</h2>
-                <h2>Digiatl Planet Is Feature</h2>
+                <h2>We Digitalizing This Planet</h2>
+                <h2>Digital Planet Is the Feature</h2>
                 <h2 className="highlight">Promote Your Brand</h2>
               </div>
               <p className="description">Lorem ipsum dolor sit amet 
-              consectetur, adipisicing elit. Iste incidunt beatae 
-              repellendus aliquid quas molestias obcaecati libero omnis 
-              nihil tenetur provident eius, maiores ut totam culpa 
+              consectetur, adipisicing elit maiores ut totam culpa 
               fugit quo quod sunt.</p>
               <div className="hero_btns">
                <button className="primary_btn">Get Started Now!</button>

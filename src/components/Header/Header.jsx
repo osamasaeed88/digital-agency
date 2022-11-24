@@ -31,7 +31,7 @@ const Header = () => {
             <div className="nav_wrapper">
                 <div className="logo">
                     <h2>DigiPlanet</h2>
-                    <p>Grow Further With Us</p>
+                    {/* <p>Grow Further With Us</p> */}
                 </div>
                 {/* ========= Navigation =============*/}
                 <div className="navigation">
