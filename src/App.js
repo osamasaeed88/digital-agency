@@ -4,6 +4,9 @@ import Hero from "./components/UI/Hero.jsx";
 import Counter from "./components/UI/Counter.jsx";
 import Services from "./components/UI/Services.jsx";
 import About from "./components/UI/About.jsx";
+import Team from "./components/UI/Team.jsx";
+import Blog from "./components/UI/Blog.jsx";
+import Testimonial from "./components/UI/Testimonial.jsx";
 
 function App() {
   return (
@@ -13,6 +16,9 @@ function App() {
    <Counter />
    <Services />
    <About />
+   <Team />
+   <Blog />
+   <Testimonial />
   </>
   );
 };
