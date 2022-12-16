@@ -36,7 +36,7 @@ const Testimonial = () => {
                   <img src={ava01} alt="" />
                 </div>
                 <div>
-                  <h5 className="customer_name">Osama Saeed</h5>
+                  <h5 className="customer_name">Jim Carry</h5>
                   <p className="description">CEO, Workcreation</p>
                 </div>
               </div>
@@ -49,7 +49,7 @@ const Testimonial = () => {
                   <img src={ava02} alt="" />
                 </div>
                 <div>
-                  <h5 className="customer_name">Osama Saeed</h5>
+                  <h5 className="customer_name">Jim Carry</h5>
                   <p className="description">CEO, Workcreation</p>
                 </div>
               </div>
@@ -62,7 +62,7 @@ const Testimonial = () => {
                   <img src={ava03} alt="" />
                 </div>
                 <div>
-                  <h5 className="customer_name">Osama Saeed</h5>
+                  <h5 className="customer_name">Jim Carry</h5>
                   <p className="description">CEO, Workcreation</p>
                 </div>
               </div>
