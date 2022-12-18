@@ -27,7 +27,7 @@ const blogData = [
 
 const Blog = () => {
   return (
-    <section>
+    <section id="blog" className="blog">
       <div className="container">
         <div className="blog_top-content">
           <h6 className="subtitle">Our Blog</h6>
@@ -37,17 +37,17 @@ const Blog = () => {
         </div>
         <div className="blog_wrapper">
           {
-            blogData.map((item,index)=>(
+            blogData.map((item, index) => (
               <div className="blog_item" key={index}>
-            <h3>{item.title}</h3>
-            <div className="blog_img">
-              <img src={item.imageUrl} alt="" />
-              <p className="description blog_desc">{item.desc}</p>
-              <div className="">
-                <a href={item.linkUrl} className="learn_more"><i class="ri-arrow-right-line"></i></a>
+                <h3>{item.title}</h3>
+                <div className="blog_img">
+                  <img src={item.imageUrl} alt="" />
+                  <p className="description blog_desc">{item.desc}</p>
+                  <div className="">
+                    <a href={item.linkUrl} className="learn_more"><i class="ri-arrow-right-line"></i></a>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
             ))
           }
         </div>
