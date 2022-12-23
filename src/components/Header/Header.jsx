@@ -3,7 +3,7 @@ import './header.style.css';
 
 const nav_links = [
     {
-        path: '#',
+        path: '#home',
         display: 'Home'
     },
     {
@@ -27,6 +27,7 @@ const nav_links = [
 const Header = ({ theme, toggleTheme }) => {
 
     const headerRef = useRef(null);
+    const menuRef = useRef(null);
 
     const headerFunc = () => {
         if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
@@ -52,7 +53,9 @@ const Header = ({ theme, toggleTheme }) => {
             left: 0,
             top: location - 80,
         });
-    }
+    };
+
+    const toggleMenu = () => menuRef.current.classList.toggle("menu_active");
 
     return (
         <header className="header" ref={headerRef}>
@@ -63,7 +66,7 @@ const Header = ({ theme, toggleTheme }) => {
                         {/* <p>Grow Further With Us</p> */}
                     </div>
                     {/* ========= Navigation =============*/}
-                    <div className="navigation">
+                    <div className="navigation" ref={menuRef} onClick={toggleMenu}>
                         <ul className="menu">
                             {
                                 nav_links.map((item, index) => (
@@ -79,6 +82,7 @@ const Header = ({ theme, toggleTheme }) => {
                             theme === 'light-theme' ? <span><i className='ri-moon-line'>Dark</i></span> : <span><i class="ri-sun-line">Light Mode</i></span>
                         }</span>
                     </div>
+                    <span className='mobile_menu' onClick={toggleMenu}><i className="ri-menu-line"></i></span>
                 </div>
             </div>
         </header>

@@ -1,15 +1,16 @@
-.counter_wrapper{
+.counter_wrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.counter_item{
+.counter_item {
     width: 35%;
     text-align: center;
 }
 
-.counter_number, .counter_title{
+.counter_number,
+.counter_title {
     color: #fff;
     /* background-size: 100% 100%;
     background-clip: text;
@@ -20,10 +21,45 @@
     font-size: 2.5rem;
 }
 
-.counter_title{
+.counter_title {
     font-size: 1.2rem;
 }
 
 .counter_section {
     padding: 0px 0px;
+}
+
+@media only screen and (max-width: 992px) {
+    .counter_number {
+        font-size: 2rem;
+    }
+
+    .counter_title {
+        font-size: 1.2rem;
+    }
+
+    .counter_item {
+        width: 30%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .counter_number {
+        font-size: 1.5rem;
+    }
+
+    .counter_title {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .counter_wrapper {
+        flex-direction: column;
+    }
+
+    .counter_item {
+        width: 100%;
+        margin-bottom: 30px;
+    }
 }
