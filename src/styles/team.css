@@ -1,3 +1,7 @@
+.our_team {
+    margin: auto;
+}
+
 .team_content {
     text-align: center;
     margin-bottom: 50px;
@@ -57,4 +61,49 @@ i {
     display: flex;
     align-items: center;
     column-gap: 2rem;
+}
+
+@media only screen and (max-width: 768px) {
+    .our_team {
+        padding-top: 150px;
+    }
+
+    .team_item {
+        width: 30%;
+        margin-bottom: 30px;
+    }
+
+    .team_wrapper {
+        flex-wrap: wrap;
+    }
+
+    .team_content h2 {
+        font-size: 1.5rem;
+    }
+
+    .team_details h4 {
+        font-size: 1rem;
+    }
+
+    .team_details p {
+        font-size: 0.8rem;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .our_team {
+        margin-top: 150px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .our_team {
+        padding-top: 600px;
+    }
+}
+
+@media only screen and (max-width: 430px) {
+    .our_team {
+        padding-top: 800px;
+    }
 }
